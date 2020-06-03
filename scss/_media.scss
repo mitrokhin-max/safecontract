@@ -1,0 +1,467 @@
+/* Адаптивный контейнер */
+@media (max-width: 1199.99px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (max-width: 991.99px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 767.99px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (max-width: 575.99px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Адаптив на 1200px */
+@media (max-width: 1199.99px) {
+    .search-block {
+
+        &__title {
+            font-size: 32px;
+            line-height: 45px;
+        }
+    }
+
+    .item-contracts {
+        &__text {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+}
+
+/* Адаптив на 992px */
+@media (max-width: 991.99px) {
+    .header {
+
+        &__link {
+            font-size: 14px;
+        }
+
+        &__btn {
+            font-size: 14px;
+        }
+    }
+
+    .search-block {
+
+        &__title {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        &__input {
+            flex: 0 1 60%;
+            input {
+                font-size: 14px;
+            }
+        }
+
+        &__btn {
+            flex: 0 1 30%;
+            button {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .card {
+        &__title {
+            font-size: 15px;
+        }
+
+        &__text {
+            font-size: 13px;
+        }
+    }
+
+    .contracts {
+        &__column {
+            flex: 0 1 50%;
+            margin: 0px 0px 30px 0px;
+        }
+    }
+
+    .adv {
+        &__logo {
+            width: 195px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__btn {
+            font-size: 14px;
+        }
+    }
+
+    .performers {
+        &__column {
+            flex: 0 1 33.333%;
+        }
+    }
+
+    .work {
+        &__body {
+            margin: 0 -30px;
+        }
+
+        &__column {
+            padding: 30px;
+        }
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        &__text {
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        &__link {
+            font-size: 14px;
+            padding: 12px 35px;
+        }
+    }
+
+    .footer {
+        &__logo {
+            width: 150px;
+        }
+
+        &__reserved {
+            font-size: 14px;
+        }
+
+        &__phone {
+            font-size: 20px;
+            margin: 0px 30px 0px 0px;
+        }
+
+        &__soc {
+            img {
+                width: 26px;
+                height: 26px;
+                margin: 0px 30px 0px 0px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__studio {
+            font-size: 14px;
+        }
+
+        &__list {
+            margin: 0 -10px ;
+            li {
+                flex: 0 1 33.333%;
+                padding: 0 10px;
+            }
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+    }
+}
+
+/* Адаптив на 768px */
+@media (max-width: 767.99px) {
+
+    .header {
+
+		&__row {
+		}
+
+		&__burger {
+            display: block;
+            position: relative;
+            z-index: 2;
+            width: 30px;
+            height: 20px;
+            
+                span {
+                    background-color: $color_green;
+                    position: absolute;
+                    top: 45%;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    transition: 300ms;
+                }
+                &::before, &::after {
+                    content: '';
+                    background-color: $color_green;
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    transition: 300ms;
+                }
+                &::before {
+                    top: 0;
+                }
+                &::after {
+                    bottom: 0;
+                }
+                &.active span {
+                    transform: scale(0);
+                }
+                &.active::before {
+                    transform: rotate(45deg);
+                    top: 50%;
+                }
+                &.active::after {
+                    transform: rotate(-45deg);
+                    top: 50%;
+                }
+		}
+
+		&__logo {
+            flex: 0 1 150px;
+		}
+
+		&__menu {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: 500ms;
+            overflow: auto;
+            background-color: #fff;
+                &.active {
+                    top: 0;
+                }
+		}
+
+		&__list {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin: 80px 0;
+            height: 80%;
+                
+		}
+
+		&__link {
+            font-size: 16px;
+        }
+        
+    
+}
+    body.lock {
+        overflow: hidden;
+    }
+
+    .advantages {
+        &__column {
+            flex: 0 1 100%;
+            margin: 0px 0px 30px 0px;
+        }
+    }
+
+    .card {
+        &__title {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .adv {
+        &__logo {
+
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__btn {
+            font-size: 14px;
+            padding: 16px 50px 16px 20px;
+            &::after {
+                width: 15px;
+                right: 20px;
+            }
+        }
+    }
+
+    .performers {
+        &__column {
+            flex: 0 1 50%;
+
+            &_inactive {
+                display: none;
+            }
+        }
+    }
+
+    .work {
+        &__body {
+            flex-direction: column-reverse;
+            margin: 0;
+        }
+
+        &__column {
+            flex: 0 1 100%;
+            margin: 0px 0px 30px 0px;
+            padding: 0;
+        }
+
+        &__img {
+            padding: 0 50px;
+        }
+    }
+
+    .footer {
+        &__column {
+            flex: 0 1 50%;
+        }
+
+        &__logo {
+            width: 120px;
+            margin: 0px 0px 10px 0px;
+        }
+
+        &__reserved {
+            font-size: 12px;
+        }
+
+        &__phone {
+            font-size: 16px;
+            margin: 0px 15px 0px 0px;
+        }
+
+        &__soc {
+            img {
+                width: 18px;
+                height: 18px;
+                margin: 0px 10px 0px 0px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__studio {
+            font-size: 12px;
+        }
+
+        &__list {
+            li {
+                flex: 0 1 50%;
+            }
+        }
+    }
+}
+
+/* Адаптив на 576px */
+@media (max-width: 575.99px) {
+    .header {
+        &__logo {
+            flex: 0 1 120px;
+        }
+    }
+
+    .search-block {
+        
+        &__title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &__input {
+            flex: 0 1 80%;
+            margin: 0px 0px 20px 0px;
+        }
+    
+        &__btn {
+            flex: 0 1 40%;
+        }
+    }
+
+    .contracts {
+
+        &__row {
+            margin: 0;
+        }
+
+        &__column {
+            flex: 0 1 100%;
+            margin: 0px 0px 20px 0px;
+            padding: 0;
+            min-width: 100%;
+        }
+    }
+    .item-contracts {
+        padding: 65px 15px 20px 15px;
+    }
+
+    .adv {
+        &__btn {
+            font-size: 12px;
+            padding: 12px 35px 12px 10px;
+                &::after {
+                    width: 15px;
+                    right: 12px;
+                }
+        }
+    }
+
+    .performers {
+        &__column {
+            flex: 0 1 100%;
+            margin: 0px 0px 15px 0px;
+        }
+
+        &__link {        
+            font-size: 14px;
+            padding: 14px 20px;
+        }
+    }
+
+    .item-performers {
+        padding: 20px 30px 20px 30px;
+    }
+
+    .footer {
+        &__contacts {
+            flex-wrap: wrap;
+        }
+
+        &__phone {
+            flex: 0 1 100%;
+            text-align: right;
+            margin: 0 0 10px 0;
+        }
+    }
+}
