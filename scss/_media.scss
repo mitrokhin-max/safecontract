@@ -271,9 +271,7 @@
         
     
 }
-    body.lock {
-        overflow: hidden;
-    }
+    
 
     .advantages {
         &__column {
@@ -381,6 +379,10 @@
                 flex: 0 1 50%;
             }
         }
+    }
+
+    body.lock {
+        overflow: hidden;
     }
 }
 
